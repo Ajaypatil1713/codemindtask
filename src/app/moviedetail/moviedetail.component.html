@@ -9,7 +9,7 @@
       <pre><strong>Release : </strong>{{ movie.release_date }}    |   {{movie.popularity | popularity}}   |   {{movie.vote_average}}</pre>
       <p><strong></strong> {{ movie.overview }}</p>
       <p><strong>Other Details  :</strong> </p>
-      <p><strong>vote count :</strong>{{ movie.vote_count}}</p>
+      <pre><strong>vote count :</strong> {{movie.vote_count}}</pre>
       <p><strong>Language : </strong>{{movie.original_language}}</p>
       <p><strong>Budget:</strong> {{ movie.budget | currency:'USD':'symbol':'1.2-2' }}</p>
       <p><strong>Revenue:</strong> {{ movie.revenue | currency:'USD':'symbol':'1.2-2' }}</p>
