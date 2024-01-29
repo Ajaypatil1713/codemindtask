@@ -38,7 +38,6 @@ export class MoviesComponent implements OnInit {
     this.http.get(searchUrl).subscribe(
       (data: any) => {
         this.searchResults = data.results;
-        // Assuming you want to display search results, you can assign them to this.movies
         this.movies = this.searchResults;
       });
   }

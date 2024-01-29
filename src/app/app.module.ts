@@ -8,13 +8,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { MoviedetailComponent } from './moviedetail/moviedetail.component';
 import { PopularityPipe } from './pipes/popularity.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     MoviedetailComponent,
-    PopularityPipe
+    PopularityPipe,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

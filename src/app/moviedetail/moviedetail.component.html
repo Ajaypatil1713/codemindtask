@@ -11,8 +11,9 @@
       <p><strong>Other Details  :</strong> </p>
       <pre><strong>vote count :</strong> {{movie.vote_count}}</pre>
       <p><strong>Language : </strong>{{movie.original_language}}</p>
-      <p><strong>Budget:</strong> {{ movie.budget | currency:'USD':'symbol':'1.2-2' }}</p>
+      <p><strong>Budget:</strong> {{ movie?.budget | currency:'USD':'symbol':'1.2-2' }}</p>
       <p><strong>Revenue:</strong> {{ movie.revenue | currency:'USD':'symbol':'1.2-2' }}</p>
+      <!-- <a routerLink="/movies">Go To Movies</a> -->
     </div>
   </div>
 </div>

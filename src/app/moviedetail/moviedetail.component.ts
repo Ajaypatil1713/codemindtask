@@ -17,6 +17,8 @@ export class MoviedetailComponent implements OnInit {
   ngOnInit(): void {
     this.service.getSelectedMovie().subscribe((selectedMovie: any) => {
       this.movie = selectedMovie;
+      console.log(this.movie);
+      
     });
   }
 }
